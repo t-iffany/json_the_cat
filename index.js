@@ -5,7 +5,6 @@
 const { fetchBreedDescription } = require('./breedFetcher');
 
 const breedName = process.argv[2];
-let url = `https://api.thecatapi.com/v1/breeds/search?q=${breedName}`;
 
 fetchBreedDescription(breedName, (error, desc) => {
   if (error) {
